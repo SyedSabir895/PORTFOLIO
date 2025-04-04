@@ -60,11 +60,8 @@ const Experience = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className={`${styles.sectionSubText} text-center`}>
-          What I have done so far
-        </p>
         <h2 className={`${styles.sectionHeadText} text-center`}>
-          Work Experience.
+          My Education
         </h2>
       </motion.div>
 
@@ -82,4 +79,4 @@ const Experience = () => {
   );
 };
 
-export default SectionWrapper(Experience, "work");
+export default SectionWrapper(Experience, "education");

@@ -15,14 +15,13 @@ import {
   git,
   figma,
   docker,
-  meta,
   starbucks,
   tesla,
   shopify,
-  carrent,
-  jobit,
-  tripguide,
-  threejs,
+  hirrd,
+  codekaro,
+  codechecker,
+  angular,
 } from "../assets";
 
 export const navLinks = [
@@ -31,8 +30,8 @@ export const navLinks = [
     title: "About",
   },
   {
-    id: "work",
-    title: "Work",
+    id: "education",
+    title: "Education",
   },
   {
     id: "contact",
@@ -97,8 +96,8 @@ const technologies = [
     icon: mongodb,
   },
   {
-    name: "Three JS",
-    icon: threejs,
+    name: "Angular",
+    icon: angular,
   },
   {
     name: "git",
@@ -116,60 +115,45 @@ const technologies = [
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
+    title: "B.Tech (Bachelor of Technology)",
+    College: "NRI Institute of Technology",
     icon: starbucks,
     iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    date: "2022 - 2026",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Pursuing my B.Tech in Artificial Intelligence and Machine Learning from NRI Institute of Technology.",
+      "Met so many good friends.",
+      "Participated in many events.",
+      "Learned how to bunk the classes 😅(No offence).",
     ],
   },
   {
-    title: "React Native Developer",
-    company_name: "Tesla",
+    title: "Intermediate",
+    College: "KBN SHINE College",
     icon: tesla,
     iconBg: "#E6DEDD",
     date: "Jan 2021 - Feb 2022",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Completed my Intermediate education at KBN SHINE Junior College with 84.4 percentage.",
+      "Learned the basics of programming and computer science.",
+      "Participated in various extracurricular activities.",
     ],
   },
   {
-    title: "Web Developer",
-    company_name: "Shopify",
+    title: "Schooling",
+    School: "Oxford High School",
     icon: shopify,
     iconBg: "#383E56",
     date: "Jan 2022 - Jan 2023",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Completed my schooling at Oxford High School.",
+      "Gained a strong foundation in mathematics and science.",
+      "Participated in various sports and cultural activities.",
     ],
   },
 ];
 
-const testimonials = [
+/*const testimonials = [
   {
     testimonial:
       "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
@@ -194,13 +178,13 @@ const testimonials = [
     company: "456 Enterprises",
     image: "https://randomuser.me/api/portraits/women/6.jpg",
   },
-];
+]; */
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "HIRRD",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Hirrd is a job portal connecting job seekers with top employers. Candidates can find jobs easily, while companies post listings to attract talent. It streamlines hiring, making the process faster and more efficient for everyone.",
     tags: [
       {
         name: "react",
@@ -215,51 +199,55 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image: hirrd,
+    source_code_link: "https://github.com/SyedSabir895/HIRRD",
   },
   {
-    name: "Job IT",
+    name: "Code Karo",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "CodeKaro is an interactive coding platform offers skill-based learning for all levels. Vibrant colors, emojis, and gamification make learning fun and engaging. Users can easily access courses, blogs, and games for a seamless experience.",
+    tags: [
+      {
+        name: "react",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Node JS",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "MongoDB",
+        color: "green-text-gradient",
+      },
+      {
+        name: "tailwind",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: codekaro,
+    source_code_link: "https://github.com/SyedSabir895/Codeekaro",
+  },
+  {
+    name: "AI Code-Checker",
+    description:
+      " AI Code Checker is a web application that helps developers identify and fix errors in their code. It uses advanced AI algorithms to analyze code snippets and provide suggestions for improvement, making coding easier and more efficient.",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "Node JS",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "Gemini API",
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Trip Guide",
-    description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-    tags: [
-      {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "supabase",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: codechecker,
+    source_code_link: "https://github.com/SyedSabir895/AI-code-correcter",
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export { services, technologies, experiences, projects };
